@@ -1,6 +1,11 @@
+:root {
+    --bg-color: gray;
+  }
+
 body {
     font-family: 'Courier New', Courier, monospace;
     color: var(--font_color);
+    background-color: var(--bs-dark);
 }
 
 p {
@@ -46,6 +51,7 @@ textarea {
 
 #bendy {
     text-align: center;
+    text-wrap: pretty;
     margin: 20px auto;
     background-color: var(--bg_color);
     color: var(--font_color);
@@ -66,31 +72,29 @@ textarea {
     margin: 20px auto;
     background-color: var(--bg_color);
     color: var(--font_color);
-    border: 5px;
-    border-style: solid;
     font-size: 22px;
     float: right;
     padding: 10px;
 }
 
 #carouselExampleCaptions {
+    margin-left: 25%;
     width: 700px;
     height: 700px;
 }
 
 .carousel-caption, .carousel-control {
-    background-color: black;
+    background-color: var(--bs-dark);
 }
 
 #foot_links {
     font-size: 22px;
+    color: white;
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
     margin: 20px auto;
-    background-color: var(--bg_color);
-    border: 5px;
-    border-style: solid;
+    background-color: var(--bs-dark);
 }
 
 a:hover {
